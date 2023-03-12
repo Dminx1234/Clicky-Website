@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clicky Button</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1><em>Clicky <br> Button</em></h1>
+    </div>
+  </header>
+
+  <main>
+    
+    <button id ="clicky">Click Me!</button>
+    <p id="clicks"></p>
+    <script> 
+    // Total clicks
+    var clicks = 0;
+    // The button
+    var button = document.getElementById("clicky");
+    // The clicks number displayed
+    var clicksView = document.getElementById("clicks");
+    // Listens for click
+    button.addEventListener("click",function(){
+        // Increases clicks
+        clicks = clicks + 1;
+        clicksView.innerHTML = clicks;
+    });
+    </script>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+
+</html>
